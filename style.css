@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-color: hsl(230, 100%, 99%);
+}
+
+.container {
+  background: url(assets/bg-pattern.svg) no-repeat;
+  background-size: cover;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container .top_text {
+  background: url(assets/pattern-circles.svg) no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.container .top_text h1 {
+  font-size: 30px;
+  color: hsl(227, 35%, 25%);
+}
+
+.container .top_text p {
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+}
+
+/* CARD */
+
+.card_container {
+  place-items: center;
+  display: grid;
+}
+
+.card_top_text {
+  display: flex;
+  align-items: center;
+}
+
+.card_top_text span {
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+}
+
+.card_top_text span strong {
+  font-size: 40px;
+  font-weight: 800;
+  color: hsl(227, 35%, 25%);
+}
+
+.card_bottom_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_bottom_text div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_bottom_text div span {
+  color: hsl(225, 20%, 60%);
+}
