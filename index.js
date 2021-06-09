@@ -27,5 +27,3 @@ slider.oninput = function() {
   }
   
 }
-
-

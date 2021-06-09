@@ -59,6 +59,7 @@ section {
   align-items: center;
   justify-content: space-between;
   margin: 15px 0;
+  flex-wrap: wrap;
 }
 
 .slider_mobile {
@@ -152,6 +153,13 @@ section {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+/* SLIDER */
+
+.slidecontainer {
+  width: 500px;
+  margin: 15px 0;
 }
 
 .slider_btn {
@@ -265,12 +273,19 @@ input:checked + .slider_btn:before {
     padding: 25px 40px;
   }
 
-  .slidecontainer {
-    display: none;
+  .aside_1 {
+    order: 1;
   }
 
-  .slider_mobile {
-    display: block;
+  .aside_2 {
+    order: 2;
+  }
+
+  .aside_3 {
+    order: 3;
+  }
+
+  .slidecontainer {
     width: 100%;
     margin: 25px 0;
   }
@@ -278,6 +293,7 @@ input:checked + .slider_btn:before {
   .card_top_bottom {
     margin: 20px 0;
     margin-left: 20px;
+    margin-right: 5px;
   }
 
   .discount {
@@ -285,7 +301,7 @@ input:checked + .slider_btn:before {
   }
 
   .discount_mobile {
-    display: block;
+    display: block !important;
   }
 
   .card_bottom_text {
