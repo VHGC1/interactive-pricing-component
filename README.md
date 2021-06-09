@@ -23,11 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot_1](https://user-images.githubusercontent.com/54951281/121364070-d594f900-c90d-11eb-8a2e-22aadd4d556e.png)
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-interactive-pricing-component-using-css-flex-QFh7cMw6U)
 - Live Site URL: [live site URL here](https://interactive-pricing-component-vhgc.netlify.app)
 
 ## My process
