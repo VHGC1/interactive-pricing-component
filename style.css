@@ -61,6 +61,10 @@ section {
   margin: 15px 0;
 }
 
+.slider_mobile {
+  display: none;
+}
+
 .card_top_text span:first-of-type {
   letter-spacing: 3px;
   font-weight: 800;
@@ -110,13 +114,28 @@ section {
   box-shadow: 2px 2px 20px 3px hsl(174, 86%, 45%);
 }
 
+/* BOTTOM OF THE TOP PART OF THE CARD */
+
 .card_top_bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 15px;
-  margin: 15px 0;
+  font-size: 13px;
+  margin: 20px 40px;
   color: hsl(225, 20%, 60%);
+}
+
+.card_top_bottom .discount {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  border-radius: 25px;
+  padding: 2px 10px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.card_top_text .discount_mobile {
+  display: none;
 }
 
 /* SWITCH */
@@ -142,7 +161,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(225, 20%, 60%);
+  background: hsl(223, 50%, 87%);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -157,7 +176,7 @@ section {
   height: 18px;
   width: 18px;
   left: 5px;
-  bottom: 5px;
+  bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -205,9 +224,76 @@ input:checked + .slider_btn:before {
 
 .btn {
   background-color: hsl(227, 35%, 25%);
-  border: none;
-  border-radius: 25px;
-  padding: 10px 45px;
-  color: white;
-  font-family: 'Manrope', sans-serif;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 50px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+.btn:hover {
+  background-color: hsl(227, 21%, 33%);
+  transition: .1s;
+}
+
+@media (max-width: 800px){
+  .container {
+    padding: 0 25px;
+  }
+
+  .top_text {
+    padding: 50px 0;
+  }
+
+  .top_text h1 {
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_top {
+    padding: 0;
+  }
+
+  .card_top_text {
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 25px 40px;
+  }
+
+  .slidecontainer {
+    display: none;
+  }
+
+  .slider_mobile {
+    display: block;
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .card_top_bottom {
+    margin: 20px 0;
+    margin-left: 20px;
+  }
+
+  .discount {
+    display: none;
+  }
+
+  .discount_mobile {
+    display: block;
+  }
+
+  .card_bottom_text {
+    flex-direction: column;
+  }
+
+  .card_bottom_text div {
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
